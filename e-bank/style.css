@@ -1,0 +1,21 @@
+.jumbotron {
+    background-image: url(https://via.placeholder.com/1500x500.png?text=Jumbotron+Image);
+    background-size: cover;
+    height: 500px;
+    text-align: center;
+    color: #fff;
+    padding-top: 150px;
+}
+
+.card {
+    height: 100%;
+}
+
+.card-img-top {
+    height: 150px;
+    object-fit: contain;
+}
+
+footer {
+    margin-top: 50px;
+}

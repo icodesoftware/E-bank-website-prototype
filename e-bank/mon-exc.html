@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <title>Money Exchange</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+      }
+
+      .container {
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+
+      .form-group label {
+        font-weight: bold;
+      }
+
+      h1 {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+
+      button[type="submit"] {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#"><img src="bank-logo.png" alt="Bank Logo" style="height: 40px; width: 40px;"></a>
+      <b>Bank name</b>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="money-transfer.html">Transfer Money</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="account-details.html">Account Details</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="mon-exc.html">Money Exchange<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="card.html">Apply for Card</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--main content-->
+    <div class="container">
+      <h1>Money Exchange</h1>
+      <form>
+        <div class="form-group">
+          <label for="currency-from">Currency You Have:</label>
+          <input type="text" class="form-control" id="currency-from" placeholder="Enter Currency You Have" required>
+        </div>
+        <div class="form-group">
+          <label for="currency-to">Currency You Want:</label>
+          <input type="text" class="form-control" id="currency-to" placeholder="Enter Currency You Want" required>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-9 offset-sm-3">
+                <button type="submit" class="btn btn-primary mr-3" style="margin-top: 0px;">Submit</button>
+                <button type="button" class="btn btn-secondary">Back</button>
+            </div>
+        </div>
+        <!-- <button type="submit" class="btn btn-primary btn-block">Exchange</button>
+        <a href="home.html" class="btn btn-secondary btn-block">Back</a> -->
+      </form>
+    </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

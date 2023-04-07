@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Money Transfer - Bank</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="smt.css">
+  </head>
+  <body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img src="bank-logo.png" alt="Bank Logo" style="height: 40px; width: 40px;"></a>
+        <b>Bank name</b>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="money-transfer.html">Transfer Money<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="account-details.html">Account Details</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="mon-exc.html">Money Exchange</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="card.html">Apply for Card</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <h2 class="text-center mb-4">Money Transfer</h2>
+          <form>
+            <div class="form-group">
+              <label for="fromAccount">From Account:</label>
+              <input type="text" class="form-control" id="fromAccount">
+            </div>
+            <div class="form-group">
+              <label for="toAccount">To Account:</label>
+              <input type="text" class="form-control" id="toAccount">
+            </div>
+            <div class="form-group">
+              <label for="currencyAmount">Currency and Amount:</label>
+              <input type="text" class="form-control" id="currencyAmount">
+            </div>
+            <div class="form-group">
+              <label for="transferDate">When to Transfer:</label>
+              <input type="date" class="form-control" id="transferDate">
+            </div>
+
+            <button type="submit" class="btn btn-primary mr-2">Submit</button>
+            <a href="index.html" class="btn btn-secondary">Back</a>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  </body>
+</html>

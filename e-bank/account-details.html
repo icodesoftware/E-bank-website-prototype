@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Account Details</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"><img src="bank-logo.png" alt="Bank Logo" style="height: 40px; width: 40px;"></a>
+    <b>Bank name</b>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="money-transfer.html">Transfer Money</a>
+              </li>
+              <li class="nav-item active">
+                  <a class="nav-link" href="account-details.html">Account Details<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="mon-exc.html">Money Exchange</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="card.html">Apply for Card</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="login.html">Logout</a>
+              </li>
+          </ul>
+      </div>
+  </nav>
+
+  <!-- main content -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Account Details</h2>
+        <form>
+            <div class="form-group row">
+                <label for="accountNumber" class="col-sm-3 col-form-label">Account Number</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="accountNumber" placeholder="Enter account number">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="accountName" class="col-sm-3 col-form-label">Account Name</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="accountName" placeholder="Enter account name">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="bankIFSC" class="col-sm-3 col-form-label">Bank IFSC</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="bankIFSC" placeholder="Enter bank IFSC">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="accountType" class="col-sm-3 col-form-label">Account Type</label>
+                <div class="col-sm-9">
+                    <select class="form-control" id="accountType">
+                        <option>Select account type</option>
+                        <option>Savings</option>
+                        <option>Current</option>
+                        <option>Fixed Deposit</option>
+                        <option>Recurring Deposit</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-9 offset-sm-3">
+                    <button type="submit" class="btn btn-primary mr-3">Submit</button>
+                    <button type="button" class="btn btn-secondary">Back</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+  </html>
